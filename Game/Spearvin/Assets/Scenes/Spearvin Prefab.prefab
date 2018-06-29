@@ -14385,6 +14385,7 @@ GameObject:
   - component: {fileID: 124493104384177550}
   - component: {fileID: 81798457963167224}
   - component: {fileID: 114731551999172664}
+  - component: {fileID: 114359469742481906}
   m_Layer: 0
   m_Name: ThirdPersonCamera
   m_TagString: MainCamera
@@ -28377,7 +28378,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1055433754374208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.3526604, y: -0.000009770447, z: 59.922733}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4110810511666076}
@@ -33749,11 +33750,11 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 0
+  m_HDR: 1
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
@@ -43676,6 +43677,18 @@ MonoBehaviour:
   Butt: 0.5
   bost: 1
   IsTalking: 1
+--- !u!114 &114359469742481906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1810317974617788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 3b0f71a986e827f498324f4a70a07e0c, type: 2}
 --- !u!114 &114731551999172664
 MonoBehaviour:
   m_ObjectHideFlags: 1

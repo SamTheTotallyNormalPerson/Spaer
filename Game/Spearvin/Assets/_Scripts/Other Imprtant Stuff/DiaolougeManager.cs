@@ -10,9 +10,10 @@ public class DiaolougeManager : MonoBehaviour {
     public Text nameText;
     public Text dialougeText;
     private Animator anim;
+    private _Spearvin userScript;
     // Use this for initialization
 
-    _Spearvin userScript;
+    
     void Start() {
         sentences = new Queue<string>();
         anim = GetComponent<Animator>();
