@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Spearvince.unity
+- path: Assets/awwwww.unity
   isLoaded: 1
   isActive: 1

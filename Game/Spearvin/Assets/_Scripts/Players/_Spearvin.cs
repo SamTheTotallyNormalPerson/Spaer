@@ -33,6 +33,9 @@ public class _Spearvin : MonoBehaviour
 
     public bool IsTalking;
 
+    public int Health;
+
+    
     
     void Start()
     {
@@ -40,12 +43,17 @@ public class _Spearvin : MonoBehaviour
         cameraT = Camera.main.transform;
         controller = GetComponent<CharacterController>();
         Punch.SetActive(false);
-        
         IsTalking = true;
+       
     }
 
     void Update()
     {
+
+        if (Health <= 1)
+        {
+            IsTalking = true;
+        }
 
         if (IsTalking == true)
         {
@@ -87,6 +95,12 @@ public class _Spearvin : MonoBehaviour
                 anim.SetTrigger("AirJump");
             }
         }
+
+        if (Health == 0)
+        {
+            IsTalking = false;
+        }
+
     }
 
     void Move(Vector2 inputDir, bool running)
